@@ -193,6 +193,26 @@ export const projects = [
     github: "https://github.com/AmulThantharate/SecOps-Lab",
     demo: "https://github.com/AmulThantharate/SecOps-Lab#readme",
   },
+  {
+    id: "4",
+    title: "SkyShift",
+    description: "Secure multi-environment ECS Fargate CI/CD pipeline built with Terraform (IaC). Implements a complete DevOps lifecycle featuring integrated Bandit SAST scanning, container vulnerability security gates (AWS Lambda), and automated blue/green ECS deployments (AWS CodeDeploy) with unified Grafana observability.",
+    tech: ["Terraform", "AWS (ECS/ECR/CodePipeline)", "Docker", "Lambda", "Grafana", "Bandit SAST", "AWS CodeDeploy"],
+    metrics: "Secure ECS Fargate Pipelines | Blue/Green Deployments | Grafana Observability",
+    category: "automation" as const,
+    github: "https://github.com/AmulThantharate/SkyShift",
+    demo: "https://github.com/AmulThantharate/SkyShift#readme",
+  },
+  {
+    id: "5",
+    title: "pipeguradAi",
+    description: "AI-powered CI/CD pipeline security analyzer, optimizer, and DevSecOps assistant built as a VS Code extension with a clean chat interface. Parses and optimizes GitHub Actions, GitLab CI, CircleCI, and AWS CodePipeline files to find security vulnerability vectors and misconfigurations with one-click remediation.",
+    tech: ["TypeScript", "VS Code Extension API", "OpenRouter API", "CI/CD Security", "Node.js", "DeepSeek API"],
+    metrics: "AI DevSecOps Assistant | VS Code Extension | Multi-Pipeline Security Scan",
+    category: "security" as const,
+    github: "https://github.com/AmulThantharate/pipeguradAi",
+    demo: "https://github.com/AmulThantharate/pipeguradAi#readme",
+  },
 ];
 
 export const certifications = [
@@ -211,18 +231,18 @@ export const certifications = [
     url: "https://aws.amazon.com/certification",
   },
   {
-    name: "Certified Kubernetes Administrator",
-    issuer: "Cloud Native Computing Foundation",
+    name: "Pre Security Certificate",
+    issuer: "TryHackMe",
     date: "2024",
-    badge: "CKA",
-    url: "https://cncf.io/certification",
+    badge: "THM-PRESEC",
+    url: "https://tryhackme.com",
   },
   {
-    name: "HashiCorp Terraform Associate",
-    issuer: "HashiCorp",
-    date: "2023",
-    badge: "HCTA",
-    url: "https://hashicorp.com/certification",
+    name: "DevSecOps Certificate",
+    issuer: "TryHackMe",
+    date: "2024",
+    badge: "THM-DEVSECOPS",
+    url: "https://tryhackme.com",
   },
 ];
 

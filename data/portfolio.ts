@@ -185,16 +185,6 @@ export const projects = [
   },
   {
     id: "3",
-    title: "SecOps-Lab",
-    description: "Multi-vector cloud security training infrastructure designed for red-team/blue-team simulation. Provisions intentional vulnerability vectors in AWS (VPC, IAM, S3) using Terraform, automates intrusion audits via CloudTrail/CloudWatch, and runs automated Trivy container image CVE checks.",
-    tech: ["Terraform", "AWS (IAM/CloudTrail)", "Docker", "Trivy", "SonarQube SAST", "CloudWatch", "Bash scripting"],
-    metrics: "IAM Least-Privilege Audits | Container SAST/CVE Scans | Threat Sandbox",
-    category: "security" as const,
-    github: "https://github.com/AmulThantharate/SecOps-Lab",
-    demo: "https://github.com/AmulThantharate/SecOps-Lab#readme",
-  },
-  {
-    id: "4",
     title: "SkyShift",
     description: "Secure multi-environment ECS Fargate CI/CD pipeline built with Terraform (IaC). Implements a complete DevOps lifecycle featuring integrated Bandit SAST scanning, container vulnerability security gates (AWS Lambda), and automated blue/green ECS deployments (AWS CodeDeploy) with unified Grafana observability.",
     tech: ["Terraform", "AWS (ECS/ECR/CodePipeline)", "Docker", "Lambda", "Grafana", "Bandit SAST", "AWS CodeDeploy"],
@@ -204,7 +194,7 @@ export const projects = [
     demo: "https://github.com/AmulThantharate/SkyShift#readme",
   },
   {
-    id: "5",
+    id: "4",
     title: "pipeguradAi",
     description: "AI-powered CI/CD pipeline security analyzer, optimizer, and DevSecOps assistant built as a VS Code extension with a clean chat interface. Parses and optimizes GitHub Actions, GitLab CI, CircleCI, and AWS CodePipeline files to find security vulnerability vectors and misconfigurations with one-click remediation.",
     tech: ["TypeScript", "VS Code Extension API", "OpenRouter API", "CI/CD Security", "Node.js", "DeepSeek API"],

@@ -31,6 +31,7 @@ export interface Certification {
   issuer: string;
   date: string;
   badge: string;
+  status: "earned" | "in-progress";
   url?: string;
 }
 

@@ -18,7 +18,9 @@ export default function CertificationsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-cyan font-mono text-sm mb-2">$ aws acm list-certificates</p>
+          <p className="text-cyan font-mono text-sm mb-2">
+            $ aws acm list-certificates
+          </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-text-primary">
             <span className="gradient-text">Certifications</span>
           </h2>
@@ -62,9 +64,23 @@ export default function CertificationsSection() {
                     </div>
 
                     {/* Badge Label */}
-                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-cyan/5 border border-cyan/10 text-xs font-mono text-cyan">
-                      <span className="w-1.5 h-1.5 rounded-full bg-success-green animate-pulse" />
-                      {cert.badge}
+                    <div
+                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border text-xs font-mono ${
+                        cert.status === "in-progress"
+                          ? "bg-yellow-500/5 border-yellow-500/20 text-yellow-400"
+                          : "bg-cyan/5 border-cyan/10 text-cyan"
+                      }`}
+                    >
+                      <span
+                        className={`w-1.5 h-1.5 rounded-full animate-pulse ${
+                          cert.status === "in-progress"
+                            ? "bg-yellow-400"
+                            : "bg-success-green"
+                        }`}
+                      />
+                      {cert.status === "in-progress"
+                        ? `${cert.badge} · In Progress`
+                        : cert.badge}
                     </div>
                   </div>
 
